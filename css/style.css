@@ -217,12 +217,13 @@ h3 {
     gap: 24px;
     padding: 120px 156px;
 }
-.feature-item {
+.features-list .feature-item {
+    width: calc((100% - 72px) /4);}
     /* заданий стиль для визначення ширини елементу списку (від загальної ширини екрану віднімаємо суму відступів між елементами і ділимо це на кількість елементів списку, аналоги: width calc((100% - 3 * 24px) / 4) або
 flex-basis: calc((100% - 3 * 24px) / 4) або
 flex-basis: calc((100% - 72px) / 4)) */
-    width: calc((100% - 72px)/4);
-}
+    
+
 .feature-title {
     font-weight: 500;
     font-size: 20px;
@@ -230,14 +231,14 @@ flex-basis: calc((100% - 72px) / 4)) */
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px; /* відступу між заголовком і параграфом */ 
-    text-align: center;
+    text-align: left;
 }
 .feature-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
+    text-align: left;
 }
 
 
