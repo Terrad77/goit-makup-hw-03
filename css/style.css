@@ -213,15 +213,16 @@ h3 {
     overflow: hidden;
 }
 .features-list {
+    /* Для списку в класі заданий стиль display: flex;
+        для розміщення елементів списку по горизонталі в рядок */
     display: flex;
     gap: 24px;
     padding: 120px 156px;
 }
-.features-list .feature-item {
-    width: calc((100% - 72px) /4);}
-    /* заданий стиль для визначення ширини елементу списку (від загальної ширини екрану віднімаємо суму відступів між елементами і ділимо це на кількість елементів списку, аналоги: width calc((100% - 3 * 24px) / 4) або
-flex-basis: calc((100% - 3 * 24px) / 4) або
-flex-basis: calc((100% - 72px) / 4)) */
+.feature-item {
+    width: calc((100% - 72px) /4);
+}
+
     
 
 .feature-title {
