@@ -342,18 +342,12 @@ h3 {
     flex-direction: column;    
 }
 .footer .logo {
-   /* font-family: "Raleway", sans-serif;
-   font-size: 18px;
-   font-weight: 700;    
-   line-height: 1.17; 
-   letter-spacing: 0.03em; 
-   text-transform: uppercase; 
-   text-decoration: none;
-   color:#4d5ae5; */
-
-   /* only for footer    */
-   display: inline-block;
+     /* only for footer    */
+   margin-right: 0;   
    margin-bottom: 16px;
+}
+.block {
+    display: inline-block;
 }
 .footer .word-studio {
     color: #F4F4FD;
@@ -363,7 +357,7 @@ h3 {
    color: #F4F4FD;
    letter-spacing: 0.02em;
    display: flex;
-   width: 264px;
+   max-width: 264px;
    height: 72px;    
    margin-top: 17.5px;
 }
