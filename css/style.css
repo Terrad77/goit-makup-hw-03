@@ -343,11 +343,9 @@ h3 {
 }
 .footer .logo {
      /* only for footer    */
-   margin-right: 0;   
+   margin-right: 0;
+   display: inline-block;   
    margin-bottom: 16px;
-}
-.block {
-    display: inline-block;
 }
 .footer .word-studio {
     color: #F4F4FD;
