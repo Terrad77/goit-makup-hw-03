@@ -17,9 +17,12 @@ img {
     max-width: 100%;
 }
 .container {
-    max-width: 1158px;
+    width: 1158px;
+    /* для центрування контейнера на сторінці */
+    margin: 0 auto; 
+    /* для налаштування внутрішніх відступів для контенту */
     padding: 0 15px; 
-    margin: 0 auto;    
+       
 }
 
 body {
@@ -95,11 +98,9 @@ h3 {
     letter-spacing: 0.03em; 
     text-transform: uppercase;
     text-decoration: none;
-    color: #4D5AE5;        
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
+    color: #4D5AE5;    
+    /*только для header*/
     margin-right: 76px;
-    flex-shrink: 0;
 }
 .word-studio {color: #2E2F42;}
 .site-nav {
@@ -110,7 +111,9 @@ h3 {
     letter-spacing: 0.02em;             
 }
 .site-nav:hover,
-.site-nav:focus {color: #404BBF;}
+.site-nav:focus {
+    color: #404BBF;
+}
 .address {
     font-style: normal;
 }
@@ -141,7 +144,6 @@ h3 {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-
 .menu-list,
 .address-list {
     display: flex;
@@ -154,9 +156,9 @@ h3 {
     background-color: #2E2F42;
     height: 600px;
 /* для визначення відступів всередині секції*/
-    padding: 188px 0; 
-/*аналоги: padding: 188px 0 188px; або padding-top: 188px; + padding-bottom: 188px; */
-
+/*аналоги: padding: 188px 0 188px; 
+або padding-top: 188px; + padding-bottom: 188px; */
+    padding: 188px 0;
 }
 .hero-title {
     font-size: 56px; 
@@ -196,6 +198,7 @@ h3 {
 /* Features sect2 */
 
 .features {
+    height: 344px;
     /*для визначення відступів всередині секції (можна використовувати аналог padding: 120px 0 120px або padding-top: 120px; та padding-bottom: 120px;*/
     padding: 120px 0;    
 }
@@ -216,16 +219,13 @@ h3 {
     /* Для списку в класі заданий стиль display: flex;
         для розміщення елементів списку по горизонталі в рядок */
     display: flex;
-    gap: 24px;
-    padding: 120px 156px;
+    /* Для списку у класі заданий стиль gap: 24px; для визначення розмірів відступів між елементами списку */
+    gap: 24px;    
 }
 .feature-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
 }
-
-    
-
-.feature-title {
+.feature-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -242,14 +242,11 @@ h3 {
     text-align: left;
 }
 
-
 /* Our Team sect3 */
 
 .team {
     background-color: #F4F4FD;
-    height: 732px; 
-    padding-top: 120px;
-    padding-bottom: 120px;
+    height: 732px;     
 }
 .team-title {
     font-size: 36px;
@@ -261,24 +258,26 @@ h3 {
     color:#2e2f42;
     margin-bottom: 72px; /*відступів між заголовком та параграфом*/
 }
-.team-description {
+.text-center {
     text-align: center;
 }
 .team-list {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
-    padding-left: 156px;
-    padding-right: 156px;    
+    gap: 24px;   
 }
 .card {
     background-color: #FFFFFF;    
     display: inline-flex;    
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 32px;    
-    width: calc((100% - 72px) / 4);
+    align-items: center;   
+    width: calc((100% - 3 * 24px) / 4);
+    /* аналоги: */
+    /* width: calc((100% - 72px) / 4); */
+    /* flex-basis: calc((100% - 3 * 24px) / 4); */
+    /* flex-basis: calc((100% - 72px) / 4); */
+
+    /* для визначення заокруглень внизу блока */
     border-radius: 0px 0px 4px 4px;    
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -291,11 +290,8 @@ h3 {
     display: flex;
     flex-direction: column;    
     align-items: center;
-    gap: 8px;   
-
     /* відступи від краю контейнера (аналог: padding: 32px 0 32px або
      padding-top: 32px; та padding-bottom: 32px; ) */
-
     padding: 32px 0;
 }
 
@@ -346,7 +342,7 @@ h3 {
     display: flex;
     flex-direction: column;    
 }
-.logo-foot {
+.block-property {
    font-family: "Raleway", sans-serif;
    font-weight: 700;
    font-size: 18px; 
@@ -355,8 +351,7 @@ h3 {
    text-transform: uppercase; 
    color:#4d5ae5;
       
-   display: inline-block;
-   margin-bottom: 16px;
+   display: inline-block;   
 }
 .footer .word-studio {
     color: #F4F4FD;
